@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #192015;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player{
+background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(background.jpg); 
+width: 400px;
+padding: 25px 35px;
+text-align: center;
+border-radius: 3%;
+box-shadow: 0 3px 9px black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.icons{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #192015;
+    color: #fff;
+    box-shadow: 0 3px 9px black;
+}
+
+.icons:hover{
+    background-color: white;
+    color: #192015;
+}
+
+.muzikfoto{
+    border-radius: 50%;
+    width: 300px;
+    
+    box-shadow: 0 3px 9px black;
+}
+.music-player h1{
+    font-size: 30x;
+    font-weight: 400;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+.music-player p{
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    
+}
+#progress{
+width: 100%;
+height: 6px;
+border-radius: 4%;
+cursor: pointer;
+margin: 40px 0;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #192015;
+    box-shadow: 0 2px 5px black;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: white; 
+    border: 5px solid #192015; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px black;
+
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    line-height: 50px;
+    background: #192015;
+    color: #fff;
+    box-shadow: 0 3px 9px black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.controls div:hover{
+    background-color: white;
+    color: #192015;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background:#fff;
+    color: #192015;
+}
+.controls div:nth-child(2):hover{
+    background: #192015;
+    color: white;
+}
